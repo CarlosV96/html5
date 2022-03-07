@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/styles.css" rel="stylesheet">
+    <script src="js/archivo.js"></script>
     <title>Mi hoja de vida</title>
 </head>
-<body>
+<body id="cuerpoPagina" class="fondo1" onload="acordeon">
     <header>
             <img src="img/Foto.jpeg" alt="Imagen de Carlos Valencia." >
             <h1>Mi Hoja de vida</h1>
     </header>
 
-    <nav>
+    <nav id="navegacion" class="colorNav1">
        <ul>
            <li>
                <a id="exp" href="experiencia.html">Experiencia laboral</a>
@@ -42,13 +43,19 @@
                 </div>
         </article>
         <aside>
-                <a href="pdf/Hoja de vida Sofka.pdf" target="_blank">Descargar pdf de hoja de vida</a>
-        </aside>
+            <a href="pdf/Hoja de vida Sofka.pdf" target="_blank">Descargar pdf de hoja de vida</a>
+            <h1>¿Deseas cambiar el color de presentación?</h1>
+            <select id="opcionesDeColor" class="selector" onchange="obtenerColor()">
+              <option value="rgb(245,245,220)">  Color original</option>
+              <option value="rgb(133, 79, 108)"> Color morado  </option>
+              <option value="rgb(95, 95, 131)">  Color azul    </option>
+              <option value="rgb(110, 92, 46)">  Color cafe    </option>
+            </select>
+          </aside>
     </main>
    
 
     <footer >
-        
             © Hecho por Carlos Valencia para
             <a href="https://www.sofka.com.co/es/sofka-university/" target="_blank"> Sofka U </a> <br>
             Número telefónico: 3185103136 <br>
